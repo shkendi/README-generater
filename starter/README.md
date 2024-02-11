@@ -8,7 +8,7 @@
   ## User Story
 
   ```text
-  
+
   AS A developer
   I WANT a README generator
   SO THAT I can quickly create a professional README for a new project
@@ -48,10 +48,15 @@
   
   When a user clicks on the links in the Table of Contents, they are taken to the corresponding section of the README.
 
+  ## License
 
-![Github license](https://img.shields.io/badge/license.none.yellowgreen.svg)
+  
+* [License](#license)
 
-## Table of Contents
+
+## Demo Video : [Walkthrough video]()
+
+## Table of Contents 
 
 * [Description](#description)
 
@@ -73,34 +78,39 @@
 
 undefined
 
-## Requirements
+## Installation
 
-undefined
+npm i
 
 ## Usage
 
-JavaSscript and Node.js.
+JavaScript and Node.js
 
 ## Contact-Me
 
 * Name - Shkendi Naqellari
 
-* Email - test@latest.com
+* Email - test@test.com
 
-* Github - [https://https://github.com/shkendi](https://github.com/https://https://github.com/shkendi/)
+* Github - [https://github.com/shkendi](https://github.com/https://github.com/shkendi/)
 
 ## Contributors
 
-https://github.com/shkendi
+
 
 ```
 ## Testing
 
 To run the test use:
 
-```
-not available
-```
+npm i
+
+## Questions
+
+To see the code walkthrough use my GitHub link: https://github.com/https://github.com/shkendi
+
+You can direct any questions or feedback at : test@test.com 
+
 
 ## License
-    Licensed under the none license.
+    Licensed under the MIT license.

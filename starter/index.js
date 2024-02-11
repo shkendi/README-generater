@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateReadme = require("./utils/generateReadme");
 
 // array of questions for user
 const questions = [
@@ -17,6 +17,11 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'license',
+        message: 'What kind of license should your project have?',
+    },
+    {
+        type: 'input',
         name: 'creator',
         message: 'Write your GitHub username.',
     },
@@ -29,7 +34,7 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'List any project dependencies here, as well as the commands to be run to install them.',
+        message: 'What command should be run to install dependencies?',
     },
     {
         type: 'input',
@@ -59,25 +64,26 @@ const questions = [
     },
 ];
 
-
-
-// function to write README file
+// function to write a README file
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(), fileName), data)
 }
 
-// function to initialize program
-// promptUser()
-// .then(data) = fs.writeFileSync('README.md', generateMarkdown(data))
-// .then((console.log('Successfully wrote to README.md')))
-// .catch((err) => console.log(err))
+// function to initialize the program
 function init() {
-    inquirer.prompt(questions).then((responses) => {
+    inquirer.prompt(questions)
+    .then((responses) => {
         console.log('Successfully wrote to README.md File...')
-        writeToFile('README.md', generateMarkdown({...responses }))
+        return writeToFile('README.md', generateReadme((responses)))
+    })
+    .then(() => {
+        console.log('README.md file successfully generated.')
+    })
+    .catch((err) => {
+        console.error(err)
     })
 }
 
 
-// function call to initialize program
+// function that calls to initialize the program
 init();

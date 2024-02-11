@@ -1,26 +1,27 @@
 // create function that returns a license based on which license is passed in
-function renderLicenseBadge(license) {
-  if (license !== 'none') {
-    return `![Github license](https://img.shields.io/badge/license.${license}.yellowgreen.svg)`
-  }
-  return ""
-}
-function renderLicenseLink(license) {
-  if (license !== "none") {
-    return `\n* [License](#license)\n`
-  }
-  return ""
-}
+// function renderLicenseBadge(license) {
+//   if (license !== 'none') {
+//     return `![Github license](https://img.shields.io/badge/license - ${license}.yellowgreen.svg)`
+//   }
+//   return ""
+// }
+// function renderLicenseLink(license) {
+//   if (license !== "none") {
+//     return `\n* [License](#license)\n`
+//   }
+//   return ""
+// }
 
-function renderLicenseSection(license) {
-  if (license !== "none") {
-    return `## License
-    Licensed under the ${license} license.`
-  }
-}
+// function renderLicenseSection(license) {
+//   if (license !== "none") {
+//     return `## License
+//     Licensed under the ${license} license.`
+//   }
+// }
 
 // function to generate markdown for README
-function generateMarkdown(responses) {
+function generateReadme(responses) {
+  
   return `# ${responses.projectTitle}
 
 
@@ -29,8 +30,6 @@ function generateMarkdown(responses) {
   We are to develop a console node application using inquirer to take input from the user and generate a README.md file which can be used in a project.
   
   ## User Story
-
-  \`\`\`text
 
   AS A developer
   I WANT a README generator
@@ -72,8 +71,11 @@ function generateMarkdown(responses) {
   When a user clicks on the links in the Table of Contents, they are taken to the corresponding section of the README.
 
 
+  ${renderLicenseLink(responses.license)}
 
-## Table of Contents
+## Demo Video : [Walkthrough video]()
+
+## Table of Contents 
 
 * [Description](#description)
 
@@ -91,7 +93,7 @@ ${renderLicenseLink(responses.license)}
 
 ## Descriptions
 
-${responses.descriptions}
+${responses.description}
 
 ## Installation
 
@@ -113,17 +115,21 @@ ${responses.usage}
 
 ${responses.contributors}
 
-\`\`\`
 ## Testing
 
 To run the test use:
 
-\`\`\`
-${responses.test} G
-\`\`\`
+${responses.installation}
+
+## Questions
+
+To see the code walkthrough use my GitHub link: https://github.com/${responses.creator}
+
+You can direct any questions or feedback at : ${responses.email} 
+
 
 ${renderLicenseSection(responses.license)}
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = generateReadme;
