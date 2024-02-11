@@ -1,9 +1,9 @@
-### README GENERATOR
+# README GENERATOR
 
-# Background
+## Background
 We are to develop a console node application using inquirer to take input from the user and generate a README.md file which can be used in a project.
 
-# User Story
+## User Story
 AS A developer I WANT a README generator SO THAT I can quickly create a professional README for a new project
 
 
