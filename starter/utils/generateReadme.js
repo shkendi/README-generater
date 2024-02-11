@@ -1,10 +1,10 @@
 // create function that returns a license based on which license is passed in
-function renderLicenseBadge(license) {
-  if (license !== 'none') {
-    return `![Github license](https://img.shields.io/badge/license-${license}-yellowgreen.svg)`
-  }
-  return ""
-}
+// function renderLicenseBadge(license) {
+//   if (license !== 'none') {
+//     return `![Github license](https://img.shields.io/badge/license-${license}-yellowgreen.svg)`
+//   }
+//   return ""
+// }
 function renderLicenseLink(license) {
   if (license !== "none") {
     return `\n* [License](#license)\n`
@@ -15,7 +15,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== "none") {
     return `## License
-    Licensed under the ${license} license.`
+    Licensed under the ${responses.license} license.`
   }
 }
 
@@ -70,8 +70,6 @@ function generateReadme(responses) {
   
   When a user clicks on the links in the Table of Contents, they are taken to the corresponding section of the README.
 
-
-  ${renderLicenseLink(responses.license)}
 
 ## Demo Video : [Walkthrough video]()
 
