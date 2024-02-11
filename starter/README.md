@@ -7,8 +7,6 @@
   
   ## User Story
 
-  ```text
-
   AS A developer
   I WANT a README generator
   SO THAT I can quickly create a professional README for a new project
@@ -48,7 +46,6 @@
   
   When a user clicks on the links in the Table of Contents, they are taken to the corresponding section of the README.
 
-  ## License
 
   
 * [License](#license)
@@ -70,13 +67,9 @@
 
 * [Testing](#testing)
 
-
-* [License](#license)
-
-
 ## Descriptions
 
-undefined
+This app will generate a README.md file for your project.
 
 ## Installation
 
@@ -90,15 +83,14 @@ JavaScript and Node.js
 
 * Name - Shkendi Naqellari
 
-* Email - test@test.com
+* Email - test@latest.com
 
-* Github - [https://github.com/shkendi](https://github.com/https://github.com/shkendi/)
+* Github - [Shkendi Naqellari](https://github.com/Shkendi Naqellari/)
 
 ## Contributors
 
 
 
-```
 ## Testing
 
 To run the test use:
@@ -107,10 +99,10 @@ npm i
 
 ## Questions
 
-To see the code walkthrough use my GitHub link: https://github.com/https://github.com/shkendi
+To see the code walkthrough use my GitHub link: https://github.com/Shkendi Naqellari
 
-You can direct any questions or feedback at : test@test.com 
+You can direct any questions or feedback at : test@latest.com 
 
 
 ## License
-    Licensed under the MIT license.
+    Licensed under the GNU license.

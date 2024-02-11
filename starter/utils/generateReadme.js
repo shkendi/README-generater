@@ -1,23 +1,23 @@
 // create function that returns a license based on which license is passed in
-// function renderLicenseBadge(license) {
-//   if (license !== 'none') {
-//     return `![Github license](https://img.shields.io/badge/license - ${license}.yellowgreen.svg)`
-//   }
-//   return ""
-// }
-// function renderLicenseLink(license) {
-//   if (license !== "none") {
-//     return `\n* [License](#license)\n`
-//   }
-//   return ""
-// }
+function renderLicenseBadge(license) {
+  if (license !== 'none') {
+    return `![Github license](https://img.shields.io/badge/license-${license}-yellowgreen.svg)`
+  }
+  return ""
+}
+function renderLicenseLink(license) {
+  if (license !== "none") {
+    return `\n* [License](#license)\n`
+  }
+  return " "
+}
 
-// function renderLicenseSection(license) {
-//   if (license !== "none") {
-//     return `## License
-//     Licensed under the ${license} license.`
-//   }
-// }
+function renderLicenseSection(license) {
+  if (license !== "none") {
+    return `## License
+    Licensed under the ${license} license.`
+  }
+}
 
 // function to generate markdown for README
 function generateReadme(responses) {
@@ -88,8 +88,6 @@ function generateReadme(responses) {
 * [Contributors](#contributors)
 
 * [Testing](#testing)
-
-${renderLicenseLink(responses.license)}
 
 ## Descriptions
 
