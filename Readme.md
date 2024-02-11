@@ -43,9 +43,6 @@ When a user clicks on the links in the Table of Contents, they are taken to the 
 
 
 
-* [License](#license)
-
-
 ## Demo Video : [Walkthrough video]()
 
 ## Table of Contents 
