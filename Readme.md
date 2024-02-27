@@ -57,6 +57,8 @@ When a user clicks on the links in the Table of Contents, they are taken to the 
 
 * [Contributors](#contributors)
 
+* [License](#license)
+
 * [Testing](#testing)
 
 ## Descriptions
@@ -82,7 +84,6 @@ JavaScript and Node.js
 ## Contributors
 
 
-
 ## Testing
 
 To run the test use:
@@ -97,4 +98,5 @@ You can direct any questions or feedback at : test@latest.com
 
 
 ## License
-  Licensed under the GNU license.
+
+This project is licensed under the [GNU License](https://opensource.org/licenses/GNU).
